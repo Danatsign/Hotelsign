@@ -2,650 +2,646 @@
 @import "https://fonts.googleapis.com/css?family=Lato:100,200,400,900";
 
 * {
-  padding: 0;
-  margin: 0;
-  box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box
 }
 
 body {
-  font-family: "Open Sans", sans-serif, helvetica, Arial;
-  font-weight: 400;
-  font-size: 14px;
-  color: rgb(38, 2, 2);
-  background-image: url(images/background.png);
-  background-attachment: fixed;
-  background-size: cover;
-  background-repeat: round;
+    font-family: 'Open Sans', sans-serif, helvetica, Arial;
+    font-weight: 400;
+    font-size: 14px;
+    color: rgb(38, 2, 2);
+    background-image: url(images/background.png);
+    background-attachment: fixed;
+    background-size: cover;
+    background-repeat: round
 }
 
 .container {
-  max-width: 800px;
-  width: 100%;
-  margin: 0 auto;
+    max-width: 800px;
+    width: 100%;
+    margin: 0 auto
 }
 
 #contact {
-  padding: 0.3px;
-  margin: 50px 0;
+    padding: .3px;
+    margin: 50px 0
 }
 
 #contact input,
 button {
-  font: 400 15px "Open Sans", sans-serif, helvetica, Arial;
+    font: 400 15px 'Open Sans', sans-serif, helvetica, Arial
 }
 
 #contact h1 {
-  font-size: 40px;
-  font-weight: 700;
-  text-align: center;
-  color: rgb(214, 202, 185);
+    font-size: 40px;
+    font-weight: 700;
+    text-align: center;
+    color: rgb(214, 202, 185)
 }
 
 #contact h3 {
-  margin: 5px 0 15px;
-  text-align: center;
+    margin: 5px 0 15px;
+    text-align: center
 }
 
 .row {
-  display: flex;
-  width: 100% !important;
-  padding: 20px 0;
+    display: flex;
+    width: 100% !important;
+    padding: 20px 0
 }
 
 .row .column {
-  margin: 0 20px;
-  width: calc(100% - 40px);
+    margin: 0 20px;
+    width: calc(100% - 40px)
 }
 
 fieldset {
-  border: medium none !important;
-  margin: 0 0 8px;
-  min-width: 100%;
-  width: 100%;
+    border: medium none !important;
+    margin: 0 0 8px;
+    min-width: 100%;
+    width: 100%
 }
 
 #contact input {
-  width: 100%;
-  border: 1px solid rgb(150, 150, 150);
-  background-color: #fff;
-  padding: 10px;
-  margin: 5px 0;
+    width: 100%;
+    border: 1px solid rgb(150, 150, 150);
+    background-color: #fff;
+    padding: 10px;
+    margin: 5px 0
 }
 
 input[type="radio"] {
-  width: 10% !important;
+    width: 10% !important
 }
 
 #contact .row .radio {
-  border: 1px solid rgb(150, 150, 150);
-  background-color: #fff;
-  margin: 7px 0 10px;
-  padding: 5px;
+    border: 1px solid rgb(150, 150, 150);
+    background-color: #fff;
+    margin: 7px 0 10px;
+    padding: 5px
 }
 
 #contact .row .idCard {
-  display: flex;
-  height: 45px !important;
-  margin: 5px 0;
+    display: flex;
+    height: 45px !important;
+    margin: 5px 0
 }
 
 #contact .row .idCard :first-child {
-  width: 80px;
+    width: 80px
 }
 
 #contact .row .idCard :last-child {
-  width: 40px;
+    width: 40px
 }
 
 #contact .row #phone {
-  max-width: 100% !important;
-  padding-right: 80px;
+    max-width: 100% !important;
+    padding-right: 80px
 }
 
 #contact input:hover {
-  transition: border-color 0.3s ease-in-out;
-  border: 1px solid rgb(68, 68, 68);
+    transition: border-color 0.3s ease-in-out;
+    border: 1px solid rgb(68, 68, 68)
 }
 
 #contact button {
-  outline: none;
-  border: none;
-  background-color: blue;
-  color: #fff;
-  margin: 0 0 5px 40%;
-  padding: 10px;
-  font-size: 17px;
-  width: 150px;
-}
-
-#contact button:hover {
-  background-color: rgba(0, 0, 255, 0.8);
-}
-
-#contact input:focus {
-  outline: 0;
-  border: 1px solid red;
-}
-
-select {
-  display: flex;
-  width: 100% !important;
-  padding: 10px 0;
-  margin: 5px 0;
-  font: 400 15px "Open Sans", sans-serif, helvetica, Arial;
-  transition: border-color 0.3s ease-in-out;
-  border: 1px solid rgb(150, 150, 150);
-  outline: none;
-}
-
-.gender {
-  color: rgb(75, 55, 255);
-  font: 100 15px;
-}
-
-.h33 {
-  color: aliceblue;
-}
-
-.country {
-  padding: auto;
-}
-
-button {
-  position: fixed;
-  top: 65%;
-  left: 50%;
-  transform: translate(-510%, -120%);
-}
-
-@media (min-width: 1281px) {
-  body {
-    overflow-x: hidden;
-  }
-
-  .container {
-    max-width: 95%;
-    width: 90%;
-    margin: 0 auto;
-    padding-left: 20px;
-    border-radius: 15px;
-  }
-
-  img {
-    width: 0;
-    height: 0;
-    visibility: hidden;
-  }
-
-  .column {
-    max-width: 30%;
-    width: 110%;
-    text-align: center;
-  }
-
-  #contact .row #phone {
-    max-width: 160% !important;
-    margin: 4px;
-  }
-
-  #contact button {
     outline: none;
-    border: double;
-    background-color: rgba(228, 83, 35, 0.726);
-    color: rgb(255, 255, 255);
+    border: none;
+    background-color: blue;
+    color: #fff;
     margin: 0 0 5px 40%;
     padding: 10px;
     font-size: 17px;
-    width: 150px;
-  }
-
-  button {
-    position: relative;
-    top: 100%;
-    left: 130%;
-    transform: translate(-350%, 350%);
-  }
-
-  #contact input {
-    position: relative;
-    left: 60px;
-    width: 135%;
-    border: 1px solid rgb(150, 150, 150);
-    background-color: #fff;
-    padding: 15px;
-    margin: 4px;
-  }
-
-  .select {
-    position: relative;
-    left: 180px;
-    width: 135%;
-    border: 1px solid rgb(150, 150, 150);
-  }
-
-  #contact {
-    width: 100%;
-    margin: auto;
-    padding: 20px;
-  }
+    width: 150px
 }
 
-@media (min-width: 1025px) and (max-width: 1280px) {
-  body {
-    overflow-x: hidden;
-  }
-
-  .container {
-    max-width: 95%;
-    width: 90%;
-    margin: 0 auto;
-    padding-left: 20px;
-    border-radius: 15px;
-  }
-
-  img {
-    width: 0;
-    height: 0;
-    visibility: hidden;
-  }
-
-  .column {
-    max-width: 30%;
-    width: 110%;
-    text-align: right;
-  }
-
-  #contact .row #phone {
-    max-width: 160% !important;
-    margin: 4px;
-  }
-
-  #contact button {
-    outline: none;
-    border: double;
-    background-color: rgba(228, 83, 35, 0.726);
-    color: #fff;
-    margin: 5px 13px 9px 4%;
-    padding-bottom: 9px;
-    font-size: 22px;
-    width: 161px;
-    position: absolute;
-    transform: translate(-300px, 220px);
-  }
-
-  button {
-    position: inherit;
-    transform: translate(-45px, 140px);
-  }
-
-  #contact input {
-    position: relative;
-    left: -7px;
-    width: 135%;
-    border: 1px solid rgb(150, 150, 150);
-    background-color: #fff;
-    padding: 15px;
-    margin: 4px;
-  }
-
-  .select {
-    position: relative;
-    left: 180px;
-    width: 135%;
-    border: 1px solid rgb(150, 150, 150);
-  }
-
-  #contact {
-    width: 100%;
-    margin: auto;
-    padding: 20px;
-  }
+#contact button:hover {
+    background-color: rgba(0, 0, 255, .8)
 }
 
-@media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
-  body {
-    width: 100%;
-    margin: auto;
-    overflow-x: hidden;
-    padding-top: 4px;
-  }
+#contact input:focus {
+    outline: 0;
+    border: 1px solid red
+}
 
-  .container {
-    width: 100%;
-    margin: auto;
-    padding: 10px;
-    border-radius: 15px;
-  }
-
-  img {
-    width: 0;
-    height: 0;
-    visibility: hidden;
-  }
-
-  .column {
-    max-width: 80%;
-    width: 100%;
-  }
-
-  #contact button {
-    outline: none;
-    border: double;
-    background-color: rgba(228, 83, 35, 0.726);
-    color: #fff;
-    margin: -1px 0 3px -1%;
-    padding-bottom: 102px;
-    font-size: 25px;
-    width: 128px;
-    padding-right: 49px;
-    padding-top: 2px;
-    padding-left: 18px;
-  }
-
-  button {
-    position: inherit;
-    transform: translate(-45px, 140px);
-  }
-
-  #contact input {
-    border: 1px solid rgb(150, 150, 150);
-    background-color: #fff;
-    padding: 10px;
+select {
+    display: flex;
+    width: 100% !important;
+    padding: 10px 0;
     margin: 5px 0;
-  }
-
-  .select {
-    width: 100%;
-    padding-left: 0;
-  }
-
-  #contact {
-    overflow: hidden;
-  }
+    font: 400 15px 'Open Sans', sans-serif, helvetica, Arial;
+    transition: border-color 0.3s ease-in-out;
+    border: 1px solid rgb(150, 150, 150);
+    outline: none
 }
 
-@media screen and (min-width: 320px) and (max-width: 767px) {
-  body {
-    width: 90%;
-    margin: 0 auto;
-    overflow-x: hidden;
-    padding-top: 60px;
-  }
+.gender {
+    color: rgb(75, 55, 255);
+    font: 100 15px
+}
 
-  .row {
-    flex-direction: column;
-  }
+.h33 {
+    color: aliceblue
+}
 
-  .container {
-    margin: 0 auto;
-  }
+.country {
+    padding: auto
+}
 
-  #contact button {
-    outline: none;
-    border: double;
-    background-color: rgba(228, 83, 35, 0.726);
-    color: #fff;
-    margin: 0 0 0 0;
-    padding: 10px;
-    font-size: 17px;
-    width: 150px;
-  }
-
-  button {
-    position: relative;
-    top: 100%;
-    left: 50%;
-    transform: translate(-50%, 0);
-  }
-
-  #contact input {
-    border: 1px solid rgb(150, 150, 150);
-    background-color: #fff;
-    padding: 10px;
-    margin: 5px 0;
-  }
-
-  img {
-    width: 60%;
-    text-align: center;
+button {
     position: fixed;
-    padding-bottom: 100px;
-    left: 69px;
-    top: 9px;
-    z-index: -9;
-  }
-
-  body {
-    font-family: "Open Sans", sans-serif, helvetica, Arial;
-    font-weight: 400;
-    font-size: 14px;
-    color: rgb(38, 2, 2);
-    background-image: url(images/slazzer-edit-image1.png);
-    background-attachment: fixed;
-    background-size: cover;
-    background-repeat: round;
-  }
+    top: 65%;
+    left: 50%;
+    transform: translate(-510%, -120%)
 }
 
-@media screen and (min-width: 0) and (max-width: 319px) {
-  body {
-    font-family: "Open Sans", sans-serif, helvetica, Arial;
-    font-weight: 400;
-    font-size: 14px;
-    color: rgb(38, 2, 2);
-    background-image: url(images/slazzer-edit-image1.png);
-    background-attachment: fixed;
-    background-size: cover;
-    background-repeat: round;
-  }
+@media (min-width:1281px) {
+    body {
+        overflow-x: hidden
+    }
 
-  .row {
-    flex-direction: column;
-  }
+    .container {
+        max-width: 95%;
+        width: 90%;
+        margin: 0 auto;
+        padding-left: 20px;
+        border-radius: 15px
+    }
 
-  .container {
-    margin: 0 auto;
-  }
+    img {
+        width: 0;
+        height: 0;
+        visibility: hidden
+    }
 
-  img {
-    width: 90%;
-    text-align: center;
-    position: fixed;
-    padding-bottom: 98px;
-    left: 20px;
-    top: 0;
-    z-index: -9;
-  }
+    .column {
+        max-width: 30%;
+        width: 110%;
+        text-align: center
+    }
 
-  #contact button {
-    outline: none;
-    border: double;
-    background-color: rgba(228, 83, 35, 0.726);
-    color: #fff;
-    margin: 0 0 0 0;
-    padding: 10px;
-    font-size: 17px;
-    width: 150px;
-  }
+    #contact .row #phone {
+        max-width: 160% !important;
+        margin: 4px
+    }
 
-  button {
-    position: relative;
-    top: 100%;
-    left: 50%;
-    transform: translate(-50%, 0);
-  }
+    #contact button {
+        outline: none;
+        border: double;
+        background-color: rgba(228, 83, 35, .726);
+        color: rgb(255, 255, 255);
+        margin: 0 0 5px 40%;
+        padding: 10px;
+        font-size: 17px;
+        width: 150px
+    }
 
-  #contact input {
-    border: 1px solid rgb(150, 150, 150);
-    background-color: #fff;
-    padding: 10px;
-    margin: 5px 0;
-  }
+    button {
+        position: relative;
+        top: 100%;
+        left: 130%;
+        transform: translate(-350%, 350%)
+    }
+
+    #contact input {
+        position: relative;
+        left: 60px;
+        width: 135%;
+        border: 1px solid rgb(150, 150, 150);
+        background-color: #fff;
+        padding: 15px;
+        margin: 4px
+    }
+
+    .select {
+        position: relative;
+        left: 180px;
+        width: 135%;
+        border: 1px solid rgb(150, 150, 150)
+    }
+
+    #contact {
+        width: 100%;
+        margin: auto;
+        padding: 20px
+    }
+}
+
+@media (min-width:1025px) and (max-width:1280px) {
+    body {
+        overflow-x: hidden
+    }
+
+    .container {
+        max-width: 95%;
+        width: 90%;
+        margin: 0 auto;
+        padding-left: 20px;
+        border-radius: 15px
+    }
+
+    img {
+        width: 0;
+        height: 0;
+        visibility: hidden
+    }
+
+    .column {
+        max-width: 30%;
+        width: 110%;
+        text-align: right
+    }
+
+    #contact .row #phone {
+        max-width: 160% !important;
+        margin: 4px
+    }
+
+    #contact button {
+        outline: none;
+        border: double;
+        background-color: rgba(228, 83, 35, .726);
+        color: #fff;
+        margin: 5px 13px 9px 4%;
+        padding-bottom: 9px;
+        font-size: 22px;
+        width: 161px;
+        position: absolute;
+        transform: translate(-300px, 220px)
+    }
+
+    button {
+        position: inherit;
+        transform: translate(-45px, 140px)
+    }
+
+    #contact input {
+        position: relative;
+        left: -7px;
+        width: 135%;
+        border: 1px solid rgb(150, 150, 150);
+        background-color: #fff;
+        padding: 15px;
+        margin: 4px
+    }
+
+    .select {
+        position: relative;
+        left: 180px;
+        width: 135%;
+        border: 1px solid rgb(150, 150, 150)
+    }
+
+    #contact {
+        width: 100%;
+        margin: auto;
+        padding: 20px
+    }
+}
+
+@media (min-width:768px) and (max-width:1024px) and (orientation:landscape) {
+    body {
+        width: 100%;
+        margin: auto;
+        overflow-x: hidden;
+        padding-top: 4px
+    }
+
+    .container {
+        width: 100%;
+        margin: auto;
+        padding: 10px;
+        border-radius: 15px
+    }
+
+    img {
+        width: 0;
+        height: 0;
+        visibility: hidden
+    }
+
+    .column {
+        max-width: 80%;
+        width: 100%
+    }
+
+    #contact button {
+        outline: none;
+        border: double;
+        background-color: rgba(228, 83, 35, .726);
+        color: #fff;
+        margin: -1px 0 3px -1%;
+        padding-bottom: 102px;
+        font-size: 25px;
+        width: 128px;
+        padding-right: 49px;
+        padding-top: 2px;
+        padding-left: 18px
+    }
+
+    button {
+        position: inherit;
+        transform: translate(-45px, 140px)
+    }
+
+    #contact input {
+        border: 1px solid rgb(150, 150, 150);
+        background-color: #fff;
+        padding: 10px;
+        margin: 5px 0
+    }
+
+    .select {
+        width: 100%;
+        padding-left: 0
+    }
+
+    #contact {
+        overflow: hidden
+    }
+}
+
+@media screen and (min-width:320px) and (max-width:767px) {
+    body {
+        width: 90%;
+        margin: 0 auto;
+        overflow-x: hidden;
+        padding-top: 60px
+    }
+
+    .row {
+        flex-direction: column
+    }
+
+    .container {
+        margin: 0 auto
+    }
+
+    #contact button {
+        outline: none;
+        border: double;
+        background-color: rgba(228, 83, 35, .726);
+        color: #fff;
+        margin: 0 0 0 0;
+        padding: 10px;
+        font-size: 17px;
+        width: 150px
+    }
+
+    button {
+        position: relative;
+        top: 100%;
+        left: 50%;
+        transform: translate(-50%, 0)
+    }
+
+    #contact input {
+        border: 1px solid rgb(150, 150, 150);
+        background-color: #fff;
+        padding: 10px;
+        margin: 5px 0
+    }
+
+    img {
+        width: 60%;
+        text-align: center;
+        position: fixed;
+        padding-bottom: 100px;
+        left: 69px;
+        top: 9px;
+        z-index: -9
+    }
+
+    body {
+        font-family: 'Open Sans', sans-serif, helvetica, Arial;
+        font-weight: 400;
+        font-size: 14px;
+        color: rgb(38, 2, 2);
+        background-image: url(images/slazzer-edit-image1.png);
+        background-attachment: fixed;
+        background-size: cover;
+        background-repeat: round
+    }
+}
+
+@media screen and (min-width:0) and (max-width:319px) {
+    body {
+        font-family: 'Open Sans', sans-serif, helvetica, Arial;
+        font-weight: 400;
+        font-size: 14px;
+        color: rgb(38, 2, 2);
+        background-image: url(images/slazzer-edit-image1.png);
+        background-attachment: fixed;
+        background-size: cover;
+        background-repeat: round
+    }
+
+    .row {
+        flex-direction: column
+    }
+
+    .container {
+        margin: 0 auto
+    }
+
+    img {
+        width: 90%;
+        text-align: center;
+        position: fixed;
+        padding-bottom: 98px;
+        left: 20px;
+        top: 0;
+        z-index: -9
+    }
+
+    #contact button {
+        outline: none;
+        border: double;
+        background-color: rgba(228, 83, 35, .726);
+        color: #fff;
+        margin: 0 0 0 0;
+        padding: 10px;
+        font-size: 17px;
+        width: 150px
+    }
+
+    button {
+        position: relative;
+        top: 100%;
+        left: 50%;
+        transform: translate(-50%, 0)
+    }
+
+    #contact input {
+        border: 1px solid rgb(150, 150, 150);
+        background-color: #fff;
+        padding: 10px;
+        margin: 5px 0
+    }
 }
 
 datepicker__container {
-  position: relative;
-  width: 320px;
-  margin: 0 auto;
-  letter-spacing: 2px;
+    position: relative;
+    width: 320px;
+    margin: 0 auto;
+    letter-spacing: 2px
 }
 
 .datepicker__lists {
-  width: 100%;
-  min-height: 281px;
-  background-color: #fff;
-  overflow: hidden;
-  position: absolute;
-  top: 66%;
-  margin-top: -2px;
-  left: 0;
-  opacity: 0;
-  visibility: hidden;
-  border-bottom-right-radius: 2px;
-  border-bottom-left-radius: 2px;
-  border-left: 3px solid #fff;
-  border-right: 3px solid #fff;
-  border-bottom: 3px solid #fff;
-  z-index: 999;
+    width: 100%;
+    min-height: 281px;
+    background-color: #fff;
+    overflow: hidden;
+    position: absolute;
+    top: 66%;
+    margin-top: -2px;
+    left: 0;
+    opacity: 0;
+    visibility: hidden;
+    border-bottom-right-radius: 2px;
+    border-bottom-left-radius: 2px;
+    border-left: 3px solid #fff;
+    border-right: 3px solid #fff;
+    border-bottom: 3px solid #fff;
+    z-index: 999
 }
 
 .datepicker__lists .list__years {
-  height: 281px;
-  overflow-y: scroll;
-  text-align: left;
-  width: 100%;
-  box-sizing: content-box;
-  padding-right: 20px;
-  transition: 2500ms ease-out;
+    height: 281px;
+    overflow-y: scroll;
+    text-align: left;
+    width: 100%;
+    box-sizing: content-box;
+    padding-right: 20px;
+    transition: 2500ms ease-out
 }
 
 .datepicker__lists .list__years li {
-  color: #f95759;
-  font-weight: 400;
-  font-size: 22px;
-  padding: 10px 15px 10px 15px;
-  cursor: pointer;
+    color: #f95759;
+    font-weight: 400;
+    font-size: 22px;
+    padding: 10px 15px 10px 15px;
+    cursor: pointer
 }
 
 .datepicker__lists .list__years li:hover,
 .datepicker__lists .list__years li:focus {
-  background-color: #f95759;
-  color: #fff;
-  outline: none;
+    background-color: #f95759;
+    color: #fff;
+    outline: none
 }
 
 .datepicker__lists .list__months {
-  overflow-y: scroll;
-  position: absolute;
-  background-color: #fff;
-  left: 80px;
-  top: 0;
-  width: 100%;
-  height: 281px;
-  opacity: 0;
-  transform: translate(70px, 0);
-  transition: all 150ms ease-out;
+    overflow-y: scroll;
+    position: absolute;
+    background-color: #fff;
+    left: 80px;
+    top: 0;
+    width: 100%;
+    height: 281px;
+    opacity: 0;
+    transform: translate(70px, 0);
+    transition: all 150ms ease-out
 }
 
 .datepicker__lists .list__months li {
-  cursor: pointer;
-  color: #f95759;
-  font-weight: 400;
-  font-size: 22px;
-  padding: 10px 15px 10px 15px;
-  cursor: pointer;
-  text-align: left;
+    cursor: pointer;
+    color: #f95759;
+    font-weight: 400;
+    font-size: 22px;
+    padding: 10px 15px 10px 15px;
+    cursor: pointer;
+    text-align: left
 }
 
 .datepicker__lists .list__months li:hover,
 .datepicker__lists .list__months li:focus {
-  background-color: #f95759;
-  color: #fff;
-  outline: none;
+    background-color: #f95759;
+    color: #fff;
+    outline: none
 }
 
 .datepicker__lists .datepicker__days {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  left: 0;
-  top: 0;
-  background-color: #f95759;
-  padding-top: 40px;
-  transition: 150ms ease-out;
-  transform: translate(0, 100%);
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    background-color: #f95759;
+    padding-top: 40px;
+    transition: 150ms ease-out;
+    transform: translate(0, 100%)
 }
 
 .datepicker__lists .datepicker__days .datepicker__month {
-  position: absolute;
-  width: 100%;
-  top: 0;
-  left: 0;
-  padding-top: 18px;
-  font-size: 22px;
-  text-align: center;
-  color: #fff;
+    position: absolute;
+    width: 100%;
+    top: 0;
+    left: 0;
+    padding-top: 18px;
+    font-size: 22px;
+    text-align: center;
+    color: #fff
 }
 
 .datepicker__lists .datepicker__days .datepicker__month li {
-  cursor: pointer;
-  font-size: 22px;
+    cursor: pointer;
+    font-size: 22px
 }
 
 .datepicker__lists .datepicker__days .datepicker__month li:hover,
 .datepicker__lists .datepicker__days .datepicker__month li:focus {
-  background-color: rgba(0, 0, 0, 0.05);
-  outline: none;
+    background-color: rgba(0, 0, 0, .05);
+    outline: none
 }
 
 .datepicker__lists .list__days {
-  padding-top: 12px;
-  display: flex;
-  flex-wrap: wrap;
-  height: 100%;
+    padding-top: 12px;
+    display: flex;
+    flex-wrap: wrap;
+    height: 100%
 }
 
 .datepicker__lists .list__days li {
-  cursor: pointer;
-  min-width: 14.28%;
-  line-height: 45px;
-  display: flex;
-  font-size: 22px;
-  align-items: flex-start;
-  justify-content: center;
-  color: #fff;
-  border-radius: 2px;
+    cursor: pointer;
+    min-width: 14.28%;
+    line-height: 45px;
+    display: flex;
+    font-size: 22px;
+    align-items: flex-start;
+    justify-content: center;
+    color: #fff;
+    border-radius: 2px
 }
 
 .datepicker__lists .list__days li:hover,
 .datepicker__lists .list__days li:focus {
-  background-color: #fff;
-  color: #f95759;
-  outline: none;
+    background-color: #fff;
+    color: #f95759;
+    outline: none
 }
 
 .datepicker__container.datepicker--visible .datepicker__lists {
-  opacity: 1;
-  visibility: visible;
-  display: block;
-  transform: translate(0, 0);
+    opacity: 1;
+    visibility: visible;
+    display: block;
+    transform: translate(0, 0)
 }
 
 .datepicker__container.datepicker--visible .datepicker__lists .list__months {
-  pointer-events: none;
+    pointer-events: none
 }
 
-.datepicker__container.datepicker--visible
-  .datepicker__lists.view--month
-  .list__months {
-  opacity: 1;
-  transform: translate(0, 0);
-  pointer-events: auto;
+.datepicker__container.datepicker--visible .datepicker__lists.view--month .list__months {
+    opacity: 1;
+    transform: translate(0, 0);
+    pointer-events: auto
 }
 
-.datepicker__container.datepicker--visible
-  .datepicker__lists.view--day
-  .datepicker__days {
-  opacity: 1;
-  transform: translate(0, 0);
+.datepicker__container.datepicker--visible .datepicker__lists.view--day .datepicker__days {
+    opacity: 1;
+    transform: translate(0, 0)
 }
